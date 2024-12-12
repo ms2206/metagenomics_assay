@@ -9,7 +9,7 @@
 # PBS directives
 #---------------
 
-#PBS -N test
+#PBS -N s04_q2_denoise
 #PBS -l nodes=1:ncpus=12
 #PBS -l walltime=00:30:00
 #PBS -q half_hour
@@ -33,6 +33,9 @@ module use /apps2/modules/all
 
 # Stop at runtime errors
 set -e
+
+# Load required modules (this is an example, change it!)
+module load QIIME2/2022.8
 
 # Base folder (this is an example, change it!)
 base_folder="/mnt/beegfs/home/s430452/metagenomics_assay/metagenomics"
