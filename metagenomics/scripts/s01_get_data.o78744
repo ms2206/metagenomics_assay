@@ -1,7 +1,0 @@
-FastQC v0.11.9
-multiqc, version 1.12
-Started downloading FASTQ files from SRA
-Thu Dec 12 15:24:44 GMT 2024
-
-SRR1770746
-/var/spool/pbs/mom_priv/jobs/78744.cr2-pbs.SC: line 65: /mnt/beegfs/home/s430452/metagenomics_assay/metagenomics/tools/sratoolkit.x.y.z-ubuntu64/bin/fasterq-dump: No such file or directory
