@@ -42,6 +42,9 @@ echo ""
 # base_folder="..."
 results_folder="${base_folder}/results"
 
+# make results folder
+mkdir -p "${results_folder}"
+
 # source_files.txt filepath
 source_filepath="${base_folder}/scripts/source_files_local.txt"
 
