@@ -3,7 +3,7 @@
 # Requires file "source_files.txt" 
 # (update the provided "source_files.txt" example by changing the path to files !)
 
-#PBS -N test
+#PBS -N s03_q2_import_and_trim
 #PBS -l nodes=1:ncpus=12
 #PBS -l walltime=00:30:00
 #PBS -q half_hour
