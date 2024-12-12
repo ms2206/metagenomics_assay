@@ -40,7 +40,7 @@ fastqc --version
 multiqc --version
 
 # Base folder (this is an example, change it!)
-base_folder="/mnt/beegfs/home/s430452/metagenomics_assay/metagenomics/"
+base_folder="/mnt/beegfs/home/s430452/metagenomics_assay/metagenomics"
 
 # Start message
 echo "Started downloading FASTQ files from SRA"
