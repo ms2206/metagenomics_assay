@@ -1,6 +1,6 @@
 #!/bin/bash
 # Minimal set of Crescent2 batch submission instructions 
-# Alexey Larionov, 08Dec2024
+# Matthew Spriggs: 12Dec24
 
 # Crescent2 script
 # Note: this script should be run on a compute node
@@ -14,7 +14,7 @@
 #PBS -l walltime=00:30:00
 #PBS -q half_hour
 #PBS -m abe
-#PBS -M alexey.larionov@cranfield.ac.uk
+#PBS -M matthew.spriggs.452@cranfield.ac.uk
 
 #===============
 #PBS -j oe
@@ -42,7 +42,7 @@ fastqc --version
 multiqc --version
 
 # Base folder (this is an example, change it!)
-base_folder="/mnt/beegfs/home/alexey.larionov/teaching_2024/metagenomics"
+base_folder="/mnt/beegfs/home/s430452/metagenomics_assay/metagenomics/"
 
 # Start message (this is an example, change it!)
 echo "Started test script"
