@@ -1,11 +1,37 @@
 # QIIME2 - Import and trim
-# Alexey Larionov, 08Dec2024
-# Requires environment with QIIME2: Use module spider qiime2 to find QIIME2 module in apps2
+# Matthew Spriggs: 12Dec24# Requires environment with QIIME2: Use module spider qiime2 to find QIIME2 module in apps2
 # Requires file "source_files.txt" 
 # (update the provided "source_files.txt" example by changing the path to files !)
 
+#PBS -N test
+#PBS -l nodes=1:ncpus=12
+#PBS -l walltime=00:30:00
+#PBS -q half_hour
+#PBS -m abe
+#PBS -M matthew.spriggs.452@cranfield.ac.uk
+
+#===============
+#PBS -j oe
+#PBS -v "CUDA_VISIBLE_DEVICES="
+#PBS -W sandbox=PRIVATE
+#PBS -k n
+ln -s $PWD $PBS_O_WORKDIR/$PBS_JOBID
+## Change to working directory
+cd $PBS_O_WORKDIR
+## Calculate number of CPUs and GPUs
+export cpus=`cat $PBS_NODEFILE | wc -l`
+## Load production modules
+module use /apps2/modules/all
+## =============
+
 # Stop at runtime errors
 set -e
+
+# Load required modules (this is an example, change it!)
+module load QIIME2/2022.8
+
+# Base folder (this is an example, change it!)
+base_folder="/mnt/beegfs/home/s430452/metagenomics_assay/metagenomics/"
 
 # Start message
 echo "QIIME2: Import and Trim"
@@ -16,11 +42,14 @@ echo ""
 # base_folder="..."
 results_folder="${base_folder}/results"
 
+# source_files.txt filepath
+source_filepath="${base_folder}/data/multiqc_data/multiqc_sources.txt"
+
 # Importing data to QIIME2. For more details: qiime tools import --help
 # Note that file "source_files.txt" should be prepared before you run this script!
 qiime tools import \
 --type "SampleData[PairedEndSequencesWithQuality]" \
---input-path "source_files.txt" \
+--input-path "${source_filepath}" \
 --input-format "PairedEndFastqManifestPhred33V2" \
 --output-path "${results_folder}/s03_pe_dmx.qza"
 
@@ -45,3 +74,7 @@ qiime demux summarize \
 echo ""
 echo "Done"
 date
+
+## Tidy up the log directory
+## =========================
+rm $PBS_O_WORKDIR/$PBS_JOBID
