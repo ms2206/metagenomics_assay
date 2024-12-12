@@ -49,7 +49,7 @@ echo ""
 
 # Folders
 #base_folder="..."
-sra_folder="${base_folder}/tools/sratoolkit.x.y.z-ubuntu64/bin" # update x.y.z 
+sra_folder="${base_folder}/tools/sratoolkit.3.1.1-ubuntu64/bin" # update x.y.z 
 data_folder="${base_folder}/data" # may exist, but should not contain the data
 
 # List of SRA IDs 
