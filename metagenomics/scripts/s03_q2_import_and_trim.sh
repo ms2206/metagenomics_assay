@@ -43,7 +43,7 @@ echo ""
 results_folder="${base_folder}/results"
 
 # source_files.txt filepath
-source_filepath="${base_folder}/data/multiqc_data/multiqc_sources.txt"
+source_filepath="${base_folder}/scripts/source_files_local.txt"
 
 # Importing data to QIIME2. For more details: qiime tools import --help
 # Note that file "source_files.txt" should be prepared before you run this script!
