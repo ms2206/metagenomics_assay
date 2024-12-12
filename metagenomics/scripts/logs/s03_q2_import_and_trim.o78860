@@ -1,0 +1,10 @@
+QIIME2: Import and Trim
+Thu Dec 12 17:09:42 GMT 2024
+
+Imported /mnt/beegfs/home/s430452/metagenomics_assay/metagenomics/scripts/source_files_local.txt as PairedEndFastqManifestPhred33V2 to /mnt/beegfs/home/s430452/metagenomics_assay/metagenomics/results/s03_pe_dmx.qza
+QIIME is caching your current deployment for improved performance. This may take a few moments and should only happen once per deployment.
+Saved SampleData[PairedEndSequencesWithQuality] to: /mnt/beegfs/home/s430452/metagenomics_assay/metagenomics/results/s03_pe_dmx_trim.qza
+Saved Visualization to: /mnt/beegfs/home/s430452/metagenomics_assay/metagenomics/results/s03_pe_dmx_trim.qzv
+
+Done
+Thu Dec 12 17:13:34 GMT 2024
