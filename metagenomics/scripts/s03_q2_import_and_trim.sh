@@ -31,7 +31,7 @@ set -e
 module load QIIME2/2022.8
 
 # Base folder (this is an example, change it!)
-base_folder="/mnt/beegfs/home/s430452/metagenomics_assay/metagenomics/"
+base_folder="/mnt/beegfs/home/s430452/metagenomics_assay/metagenomics"
 
 # Start message
 echo "QIIME2: Import and Trim"
