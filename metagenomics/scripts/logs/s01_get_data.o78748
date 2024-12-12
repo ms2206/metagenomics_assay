@@ -1,0 +1,98 @@
+FastQC v0.11.9
+multiqc, version 1.12
+Started downloading FASTQ files from SRA
+Thu Dec 12 15:29:26 GMT 2024
+
+SRR1770746
+spots read      : 53,175
+reads read      : 106,350
+reads written   : 106,350
+
+SRR1770744
+spots read      : 45,861
+reads read      : 91,722
+reads written   : 91,722
+
+SRR1770743
+spots read      : 43,213
+reads read      : 86,426
+reads written   : 86,426
+
+SRR1770742
+spots read      : 42,191
+reads read      : 84,382
+reads written   : 84,382
+
+SRR1770738
+spots read      : 43,708
+reads read      : 87,416
+reads written   : 87,416
+
+SRR1770737
+spots read      : 50,642
+reads read      : 101,284
+reads written   : 101,284
+
+SRR1770762
+spots read      : 29,915
+reads read      : 59,830
+reads written   : 59,830
+
+SRR1770760
+spots read      : 36,459
+reads read      : 72,918
+reads written   : 72,918
+
+SRR1770758
+spots read      : 31,866
+reads read      : 63,732
+reads written   : 63,732
+
+SRR1770756
+spots read      : 35,712
+reads read      : 71,424
+reads written   : 71,424
+
+SRR1770753
+spots read      : 25,899
+reads read      : 51,798
+reads written   : 51,798
+
+SRR1770752
+spots read      : 24,704
+reads read      : 49,408
+reads written   : 49,408
+
+SRR1770778
+spots read      : 28,561
+reads read      : 57,122
+reads written   : 57,122
+
+SRR1770775
+spots read      : 33,487
+reads read      : 66,974
+reads written   : 66,974
+
+SRR1770773
+spots read      : 29,739
+reads read      : 59,478
+reads written   : 59,478
+
+SRR1770770
+spots read      : 31,083
+reads read      : 62,166
+reads written   : 62,166
+
+SRR1770768
+spots read      : 35,193
+reads read      : 70,386
+reads written   : 70,386
+
+SRR1770766
+spots read      : 25,444
+reads read      : 50,888
+reads written   : 50,888
+
+
+Done
+Thu Dec 12 15:32:18 GMT 2024
