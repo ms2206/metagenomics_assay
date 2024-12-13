@@ -1,9 +1,41 @@
 # QIIME2 - Alpha-diversity box-plots
-# Alexey Larionov, 08Dec2024
+# Matthew Spriggs: 13Dec24
 # Requires environment with QIIME2 
+
+# Crescent2 script
+# Note: this script should be run on a compute node
+# qsub script.sh
+
+# PBS directives
+#---------------
+
+#PBS -N s08_q2_alpha_diversity_box_plots
+#PBS -l nodes=1:ncpus=12
+#PBS -l walltime=00:30:00
+#PBS -q half_hour
+#PBS -m abe
+#PBS -M matthew.spriggs.452@cranfield.ac.uk
+
+#===============
+#PBS -j oe
+#PBS -v "CUDA_VISIBLE_DEVICES="
+#PBS -W sandbox=PRIVATE
+#PBS -k n
+ln -s $PWD $PBS_O_WORKDIR/$PBS_JOBID
+## Change to working directory
+cd $PBS_O_WORKDIR
+## Calculate number of CPUs and GPUs
+export cpus=`cat $PBS_NODEFILE | wc -l`
+## Load production modules
+module use /apps2/modules/all
+## =============
 
 # Stop at runtime errors
 set -e
+
+
+# Load required modules
+module load QIIME2/2022.8
 
 # Start message
 echo "QIIME2: Alpha-diversity box-plots"
@@ -11,7 +43,7 @@ date
 echo ""
 
 # Folders
-# base_folder="..."
+base_folder="/mnt/beegfs/home/s430452/metagenomics_assay/metagenomics"
 results_folder="${base_folder}/results"
 diversity_metrics_folder="${results_folder}/s07_diversity_metrics"
 
@@ -36,3 +68,7 @@ qiime diversity alpha-group-significance \
 echo ""
 echo "Done"
 date
+
+## Tidy up the log directory
+## =========================
+rm $PBS_O_WORKDIR/$PBS_JOBID
