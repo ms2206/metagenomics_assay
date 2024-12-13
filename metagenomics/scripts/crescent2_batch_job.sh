@@ -1,6 +1,6 @@
 #!/bin/bash
 # Minimal set of Crescent2 batch submission instructions 
-# Matthew Spriggs: 12Dec24
+# Matthew Spriggs: 13Dec24
 
 # Crescent2 script
 # Note: this script should be run on a compute node
