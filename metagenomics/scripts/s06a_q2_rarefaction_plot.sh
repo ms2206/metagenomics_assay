@@ -33,6 +33,9 @@ module use /apps2/modules/all
 # Stop at runtime errors
 set -e
 
+# Load required modules
+module load QIIME2/2022.8
+
 # Start message
 echo "QIIME2: Rarefaction plot"
 date
