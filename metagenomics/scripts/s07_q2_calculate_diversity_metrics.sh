@@ -54,9 +54,6 @@ diversity_metrics_folder="${results_folder}/s07_diversity_metrics"
 # Remove results, if existed
 rm -fr "${diversity_metrics_folder}"
 
-# Make results folder
-mkdir -p "${diversity_metrics_folder}"
-
 
 # Calculate a whole bunch of diversity metrics 
 # Select the sampling-depth as the minimal count of non-chimeric reads (see output of step 4)
